@@ -235,7 +235,7 @@
                     instances: { prompt: finalPrompt }, // Use the dynamically generated prompt
                     parameters: { "sampleCount": 1 }
                 };
-                const apiKey = ""; // Canvas will provide this at runtime
+                const apiKey = "AIzaSyBBdSL8uesGqhgu6F2wS7nzkY8x2GMUVq8"; // Canvas will provide this at runtime
                 const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/imagen-3.0-generate-002:predict?key=${apiKey}`;
 
                 const response = await fetch(apiUrl, {
