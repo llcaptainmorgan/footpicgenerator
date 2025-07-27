@@ -108,7 +108,7 @@
         const sizes = ["size 18 feet", "size 20 feet", "size 22 feet", "size 24 feet"];
         const genders = ["male", "female", "gender-neutral"];
         const skinColors = ["pale skin", "tanned skin", "dark skin", "olive skin", "albino skin"];
-        const nailColors = ["red nail polish", "blue nail polish", "green nail polish", "yellow nail polish", "purple nail polish", "black nail polish", "white nail polish", "no nail polish", "rainbow nail polish", "polka dot nail polish"];
+        const nailColors = ["red nail polish", "blue nail polish", "green nail polish", "yellow nail polish", "purple nail polish", "black nail polish", "white nail polish", "rainbow nail polish", "polka dot nail polish", "no nail polish"];
         const nailSizes = ["long nails", "short nails", "neatly trimmed nails", "overgrown nails"];
 
         const monsterFeatures = [
@@ -235,7 +235,8 @@
                     instances: { prompt: finalPrompt }, // Use the dynamically generated prompt
                     parameters: { "sampleCount": 1 }
                 };
-                const apiKey = "AIzaSyBBdSL8uesGqhgu6F2wS7nzkY8x2GMUVq8"; // Canvas will provide this at runtime
+                // IMPORTANT: Replace "YOUR_GOOGLE_API_KEY_HERE" with your actual API key
+                const apiKey = "AIzaSyBBdSL8uesGqhgu6F2wS7nzkY8x2GMUVq8"; 
                 const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/imagen-3.0-generate-002:predict?key=${apiKey}`;
 
                 const response = await fetch(apiUrl, {
